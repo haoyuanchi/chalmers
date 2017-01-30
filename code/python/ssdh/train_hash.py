@@ -58,45 +58,53 @@ def build_model(input_var, which_data):
     network = {}
 
     if which_data=='mnist':
-        network['input'] = lasagne.layers.InputLayer(shape=(None, 1, 28, 28),
+        network['input'] = lasagne.layers.InputLayer(shape=(batch_size, 1, 28, 28),
                                                      input_var=input_var)
 
     elif which_data=='svhn':
-        network['input'] = lasagne.layers.InputLayer(shape=(None, 3, 32, 32),
+        network['input'] = lasagne.layers.InputLayer(shape=(batch_size, 3, 32, 32),
                                                      input_var=input_var)
 
     elif which_data=='cifar10':
-        network['input'] = lasagne.layers.InputLayer(shape=(None, 3, 32, 32),
+        network['input'] = lasagne.layers.InputLayer(shape=(batch_size, 3, 32, 32),
                                                      input_var=input_var)
 
     elif which_data=='cifar100':
-        network['input'] = lasagne.layers.InputLayer(shape=(None, 3, 32, 32),
+        network['input'] = lasagne.layers.InputLayer(shape=(batch_size, 3, 32, 32),
                                                      input_var=input_var)
+    network['conv1'] = lasagne.layers.Conv2DLayer(
+        network['input'], num_filters=32, filter_size=(5, 5),
+        nonlinearity=lasagne.nonlinearities.rectify,
+        W=lasagne.init.GlorotUniform())
 
-    network['conv1'] = lasagne.layers.Conv2DLayer(network, num_filters=32, filter_size=(5, 5),
-                                                  nonlinearity=lasagne.nonlinearities.rectify,
-                                                  W=lasagne.init.GlorotUniform())
-    network['pool1'] = lasagne.layers.MaxPool2DLayer(network, pool_size=(2, 2))
-    network['conv2'] = lasagne.layers.Conv2DLayer(network, num_filters=32, filter_size=(5, 5),
-                                                  nonlinearity=lasagne.nonlinearities.rectify,
-                                                  W=lasagne.init.GlorotUniform())
-    network['pool2'] = lasagne.layers.MaxPool2DLayer(network, pool_size=(2, 2))
+    network['pool1'] = lasagne.layers.MaxPool2DLayer(network['conv1'], pool_size=(2, 2))
+
+    network['conv2'] = lasagne.layers.Conv2DLayer(
+        network['pool1'], num_filters=32, filter_size=(5, 5),
+        nonlinearity=lasagne.nonlinearities.rectify,
+        W=lasagne.init.GlorotUniform())
+
+    network['pool2'] = lasagne.layers.MaxPool2DLayer(network['conv2'], pool_size=(2, 2))
     # A fully-connected layer of 256 units with 50% dropout on its inputs:
-    network['fc3'] = lasagne.layers.DenseLayer(lasagne.layers.dropout(network, p=0.5),
-                                               num_units=256,
-                                               nonlinearity=lasagne.nonlinearities.rectify,
-                                               W=lasagne.init.GlorotUniform())
+    network['fc3'] = lasagne.layers.DenseLayer(
+        lasagne.layers.dropout(network['pool2'], p=0.5),
+        num_units=256,
+        nonlinearity=lasagne.nonlinearities.rectify,
+        W=lasagne.init.GlorotUniform())
 
     # binary hash code
-    network['hash'] = lasagne.layers.DenseLayer(lasagne.layers.dropout(network, p=0.5),
-                                                num_units=48,
-                                                nonlinearity=lasagne.nonlinearities.sigmoid,
-                                                W=lasagne.init.GlorotUniform())
+    network['hash'] = lasagne.layers.DenseLayer(
+        lasagne.layers.dropout(network['fc3'], p=0.5),
+        num_units=48,
+        nonlinearity=lasagne.nonlinearities.sigmoid,
+        W=lasagne.init.GlorotUniform())
 
     # And, finally, the 10-unit output layer with 50% dropout on its inputs:
-    network['fc4'] = lasagne.layers.DenseLayer(lasagne.layers.dropout(network, p=0.5),
-                                               num_units=10,
-                                               nonlinearity=lasagne.nonlinearities.softmax)
+    network['fc4'] = lasagne.layers.DenseLayer(
+        lasagne.layers.dropout(network['hash'], p=0.5),
+        num_units=10,
+        nonlinearity=lasagne.nonlinearities.softmax)
+
     return network
 
 
@@ -154,33 +162,41 @@ def main(which_data='cifar10', num_epochs=500):
     network = build_model(input_var, which_data)
 
     prediction = lasagne.layers.get_output(network['fc4'])
+
+    hash_out = lasagne.layers.get_output(network['hash'])
+    hash_out_shape = lasagne.layers.get_output_shape(network['hash'])
+    assert(hash_out_shape == (batch_size, hash_bits))
+
     loss = lasagne.objectives.categorical_crossentropy(prediction, target_var)
     loss = loss.mean()
 
-    l2_penalty = regularize_layer_params_weighted(network['fc4'], l2)
+    # lasagne.regularization.l2(network['fc4'])
+
+    l2_penalty = regularize_layer_params(network['fc4'], l2)
     l1_penalty = regularize_layer_params(network['fc4'], l1) * 1e-4
 
-    hash_out = lasagne.layers.get_output(network['hash'])
-    assert(hash_out.shape == (hash_bits, batch_size))
     # making each bit has 50% probability of being one or zero
     # sum the batch size
-    avg = sum(hash_out, 1) / batch_size
-    x = theano.tensor.ivector('x')
-    y = theano.tensor.iscalar('y')
-    y = l2(x - 0.5)
-    f = theano.function([x], y)
-    even_dist_loss = f(avg)
+    avg = theano.tensor.sum(hash_out, 0) / batch_size
+    even_dist_loss = l2(avg - 0.5)
+    # x = theano.tensor.ivector('x')
+    # y = theano.tensor.iscalar('y')
+    # y = l2(x - 0.5)
+    # f = theano.function([x], y)
+    # even_dist_loss = f(avg)
     even_dist_loss_weight = 0.1
 
     # encourage the activations of the units in H to be close to either 0 or 1
-    x = theano.tensor.imatrix('x')
-    y = theano.tensor.iscalar('y')
-    y = T.mean(T.sum((x - 0.5) * (x - 0.5), 1))     # every hash bit - 0.5
-    f = theano.function([x], y)
-    force_binary_loss = f(hash_out)
+    # x = theano.tensor.imatrix('x')
+    # y = theano.tensor.iscalar('y')
+    # y = T.mean(T.sum((x - 0.5) * (x - 0.5), 1))     # every hash bit - 0.5
+    # f = theano.function([x], y)
+    # force_binary_loss = f(hash_out)
+    force_binary_loss = T.mean(T.sum((hash_out - 0.5) * (hash_out - 0.5), 0))
     force_binary_loss_weight = 0.1
 
-    loss = loss + l2_penalty + l1_penalty + \
+    # l2_penalty + l1_penalty + \
+    loss = loss + \
            even_dist_loss * even_dist_loss_weight + \
            force_binary_loss * force_binary_loss_weight
 
@@ -206,7 +222,7 @@ def main(which_data='cifar10', num_epochs=500):
         train_err = 0
         train_batches = 0
         start_time = time.time()
-        for batch in iterate_minibatches(train_set_x, train_set_y, 500, shuffle=True):
+        for batch in iterate_minibatches(train_set_x, train_set_y, batch_size, shuffle=True):
             inputs, targets = batch
             train_err += train_fn(inputs, targets)
             train_batches += 1
@@ -215,7 +231,7 @@ def main(which_data='cifar10', num_epochs=500):
         val_err = 0
         val_acc = 0
         val_batches = 0
-        for batch in iterate_minibatches(valid_set_x, valid_set_y, 500, shuffle=False):
+        for batch in iterate_minibatches(valid_set_x, valid_set_y, batch_size, shuffle=False):
             inputs, targets = batch
             err, acc = val_fn(inputs, targets)
             val_err += err
@@ -234,7 +250,7 @@ def main(which_data='cifar10', num_epochs=500):
     test_err = 0
     test_acc = 0
     test_batches = 0
-    for batch in iterate_minibatches(test_set_x, test_set_y, 500, shuffle=False):
+    for batch in iterate_minibatches(test_set_x, test_set_y, batch_size, shuffle=False):
         inputs, targets = batch
         err, acc = val_fn(inputs, targets)
         test_err += err
@@ -252,7 +268,7 @@ if __name__ == "__main__":
     network = main(which_data)
 
     # dump the network weights to a file
-    np.savez(which_data + '.npz', lasagne.layers.get_all_param_values(network))
+    np.savez(which_data + '.npz', lasagne.layers.get_all_param_values(network['fc4']))
 
 
 
