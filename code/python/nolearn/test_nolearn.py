@@ -75,7 +75,7 @@ from nolearn.lasagne.visualize import plot_conv_activity
 from nolearn.lasagne.visualize import plot_occlusion
 from nolearn.lasagne.visualize import plot_saliency
 
-draw_to_file(net0, './network_struct.jpg')
+# draw_to_file(net0, './network_struct.jpg')
 
 plot_loss(net0)
 
