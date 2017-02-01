@@ -34,14 +34,14 @@ end
 net = caffe.Net(net_model, net_weights, phase);
 
 % load mean file
-d = load('./dataset/ilsvrc_2012_mean.mat');
+d = load('/home/hychi/Research/caffe/data/cifar10-dataset/ilsvrc_2012_mean.mat');
 mean_data = d.mean_data;
 
 batch_size = 10;
 
 % prepare input
 num_images = length(list_im);
-scores = zeros(dim,num_images,'single');
+scores = zeros(dim, num_images, 'single');
 num_batches = ceil(length(list_im)/batch_size);
 initic=tic;
 for bb = 1 : num_batches

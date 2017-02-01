@@ -47,25 +47,27 @@ binary_train_file = sprintf('%s/binary-%s-train.mat', result_folder, int2str(fea
 map_file = sprintf('%s/map.txt', result_folder);
 precision_file = sprintf('%s/precision-at-k.txt', result_folder);
 
+% feature extraction- training set
+if exist(binary_train_file, 'file') ~= 0
+    load(binary_train_file);
+else
+    feat_train = feat_batch(use_gpu, model_def_file, model_file, train_file_list, feat_len);
+    save(feat_train_file, 'feat_train', '-v7.3');    
+    binary_train = gen_binary(feat_train);
+    save(binary_train_file,'binary_train','-v7.3');
+end
+
 % feature extraction- test set
 if exist(binary_test_file, 'file') ~= 0
     load(binary_test_file);
 else
     feat_test = feat_batch(use_gpu, model_def_file, model_file, test_file_list, feat_len);
     save(feat_test_file, 'feat_test', '-v7.3');
-    binary_test = (feat_test>0.5);
+    binary_test = gen_binary(feat_test);
     save(binary_test_file,'binary_test','-v7.3');
 end
     
-% feature extraction- training set
-if exist(binary_train_file, 'file') ~= 0
-    load(binary_train_file);
-else
-    feat_train = feat_batch(use_gpu, model_def_file, model_file, train_file_list, feat_len);
-    save(feat_train_file, 'feat_train', '-v7.3');
-    binary_train = (feat_train>0.5);
-    save(binary_train_file,'binary_train','-v7.3');
-end
+
 
 trn_label = load(train_label_file);
 tst_label = load(test_label_file);
@@ -75,5 +77,3 @@ fprintf('MAP = %f\n',map);
 save(map_file, 'map', '-ascii');
 P = [[1:1:top_k]' precision_at_k'];
 save(precision_file, 'P', '-ascii');
-
-
