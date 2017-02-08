@@ -32,8 +32,8 @@ def bulid_model_vgg_like(input_var, hash_bit, which_data):
                                                 filter_size=(3, 3),
                                                 pad=1,
                                                 nonlinearity=lasagne.nonlinearities.identity)
-    network['bn1_1'] = lasagne.layers.BatchNormLayer(network['conv1_1'])
-    network['ac1_1'] = lasagne.layers.NonlinearityLayer(network['bn1_1'], nonlinearity=activation)
+    # network['bn1_1'] = lasagne.layers.BatchNormLayer(network['conv1_1'])
+    network['ac1_1'] = lasagne.layers.NonlinearityLayer(network['conv1_1'], nonlinearity=activation)
 
     network['conv1_2'] = binary_net.Conv2DLayer(network['ac1_1'],
                                               num_filters=128,
@@ -50,8 +50,8 @@ def bulid_model_vgg_like(input_var, hash_bit, which_data):
                                                 filter_size=(3, 3),
                                                 pad=1,
                                                 nonlinearity=lasagne.nonlinearities.identity)
-    network['bn2_1'] = lasagne.layers.BatchNormLayer(network['conv2_1'])
-    network['ac2_1'] = lasagne.layers.NonlinearityLayer(network['bn2_1'], nonlinearity=activation)
+    # network['bn2_1'] = lasagne.layers.BatchNormLayer(network['conv2_1'])
+    network['ac2_1'] = lasagne.layers.NonlinearityLayer(network['conv2_1'], nonlinearity=activation)
 
     network['conv2_2'] = binary_net.Conv2DLayer(network['ac2_1'],
                                                 num_filters=256,
@@ -68,8 +68,8 @@ def bulid_model_vgg_like(input_var, hash_bit, which_data):
                                                 filter_size=(3, 3),
                                                 pad=1,
                                                 nonlinearity=lasagne.nonlinearities.identity)
-    network['bn3_1'] = lasagne.layers.BatchNormLayer(network['conv3_1'])
-    network['ac3_1'] = lasagne.layers.NonlinearityLayer(network['bn3_1'], nonlinearity=activation)
+    # network['bn3_1'] = lasagne.layers.BatchNormLayer(network['conv3_1'])
+    network['ac3_1'] = lasagne.layers.NonlinearityLayer(network['conv3_1'], nonlinearity=activation)
 
     network['conv3_2'] = binary_net.Conv2DLayer(network['ac3_1'],
                                                 num_filters=512,
@@ -85,13 +85,17 @@ def bulid_model_vgg_like(input_var, hash_bit, which_data):
     network['bn4'] = lasagne.layers.BatchNormLayer(network['fc4'])
     network['ac4'] = lasagne.layers.NonlinearityLayer(network['bn4'], nonlinearity=activation)
 
-    network['fc_hash'] = binary_net.DenseLayer(network['ac4'], num_units=hash_bit, nonlinearity=lasagne.nonlinearities.identity)
-    network['bn5'] = lasagne.layers.BatchNormLayer(network['fc_hash'])
-    network['hash_out'] = lasagne.layers.NonlinearityLayer(network['bn5'], nonlinearity=activation)
+    network['fc5'] = binary_net.DenseLayer(network['ac4'], num_units=1024, nonlinearity=lasagne.nonlinearities.identity)
+    network['bn5'] = lasagne.layers.BatchNormLayer(network['fc5'])
+    network['ac5'] = lasagne.layers.NonlinearityLayer(network['bn5'], nonlinearity=activation)
 
-    network['fc6'] = binary_net.DenseLayer(network['hash_out'], num_units=10, nonlinearity=lasagne.nonlinearities.identity)
-    network['bn6'] = lasagne.layers.BatchNormLayer(network['fc6'])
-    network['prob'] = lasagne.layers.NonlinearityLayer(network['bn6'], nonlinearity=lasagne.nonlinearities.softmax)
+    network['fc_hash'] = binary_net.DenseLayer(network['ac5'], num_units=hash_bit, nonlinearity=lasagne.nonlinearities.identity)
+    network['bn_hash'] = lasagne.layers.BatchNormLayer(network['fc_hash'])
+    network['hash_out'] = lasagne.layers.NonlinearityLayer(network['bn_hash'], nonlinearity=activation)
+
+    network['fc_out'] = binary_net.DenseLayer(network['hash_out'], num_units=11, nonlinearity=lasagne.nonlinearities.identity)
+    network['bn_out'] = lasagne.layers.BatchNormLayer(network['fc_out'])
+    network['prob'] = lasagne.layers.NonlinearityLayer(network['bn_out'], nonlinearity=lasagne.nonlinearities.softmax)
 
     return network
 

@@ -5,7 +5,7 @@ from load_data import load_svhn, load_mnist, load_cifar10, load_cifar100
 import theano
 import theano.tensor as T
 import lasagne
-
+from keras.utils import np_utils
 
 import binary_net
 import model
@@ -17,6 +17,7 @@ from collections import OrderedDict
 
 import time
 from scipy.misc import imresize
+
 
 feature_width = 256
 feature_height = 256
@@ -38,7 +39,7 @@ def cropImage(im):
     return im_crop
 
 
-def load_dataset(which_data='cifar10', outputlayer='Logistic'):
+def load_dataset(which_data):
     which_data = which_data.lower()
 
     if which_data not in ('mnist', 'cifar10', 'svhn', 'cifar100'):
@@ -155,7 +156,7 @@ def main(train_set_x, train_set_y, valid_set_x, valid_set_y, test_set_x, test_se
 
     ##########    lose function hinge
     test_prediction = lasagne.layers.get_output(output_layer, deterministic=True)
-    test_loss = T.mean(T.sqr(T.maximum(0., 1. - prediction * target_var)))
+    test_loss = T.mean(T.sqr(T.maximum(0., 1. - test_prediction * target_var)))
     # As a bonus, also create an expression for the classification accuracy:
     test_acc = T.mean(T.eq(T.argmax(test_prediction, axis=1), T.argmax(target_var, axis=1)), dtype=theano.config.floatX)
 
@@ -165,7 +166,7 @@ def main(train_set_x, train_set_y, valid_set_x, valid_set_y, test_set_x, test_se
     # Finally, launch the training loop.
     print("Starting training...")
 
-    best_val_acc = 100
+    best_val_acc = 0
     best_epoch = 1
     LR = LR_start
 
@@ -183,30 +184,29 @@ def main(train_set_x, train_set_y, valid_set_x, valid_set_y, test_set_x, test_se
     # This function tests the model a full epoch (on the whole dataset)
     def val_epoch(X, y):
         # And a full pass over the validation data:
-        val_err = 0
+        val_loss = 0
         val_acc = 0
         batches = len(X) / batch_size
         for i in range(batches):
-            err, acc = val_fn(X[i * batch_size:(i + 1) * batch_size], y[i * batch_size:(i + 1) * batch_size])
-            val_err += err
+            loss, acc = val_fn(X[i * batch_size:(i + 1) * batch_size], y[i * batch_size:(i + 1) * batch_size])
+            val_loss += loss
             val_acc += acc
 
         val_acc = val_acc / batches * 100
-        val_err /= batches
+        val_loss /= batches
 
-        return val_err, val_acc
+        return val_loss, val_acc
 
     # We iterate over epochs:
     for epoch in range(num_epochs):
         start_time = time.time()
 
         train_set_x, train_set_y = shuffle(train_set_x, train_set_y)
-
         train_err = train_epoch(train_set_x, train_set_y, LR)
-        val_err, val_acc = val_epoch(valid_set_x, valid_set_y)
+        val_loss, val_acc = val_epoch(valid_set_x, valid_set_y)
 
         # test if validation error went down
-        if val_acc <= best_val_acc:
+        if val_acc >= best_val_acc:
 
             best_val_acc = val_acc
             best_epoch = epoch + 1
@@ -224,12 +224,12 @@ def main(train_set_x, train_set_y, valid_set_x, valid_set_y, test_set_x, test_se
         print("Epoch " + str(epoch + 1) + " of " + str(num_epochs) + " took " + str(epoch_duration) + "s")
         print("  LR:                            " + str(LR))
         print("  training loss:                 " + str(train_err))
-        print("  validation loss:               " + str(val_err))
-        print("  validation error rate:         " + str(val_acc) + "%")
+        print("  validation loss:               " + str(val_loss))
+        print("  validation accuracy rate:      " + str(val_acc) + "%")
         print("  best epoch:                    " + str(best_epoch))
-        print("  best validation error rate:    " + str(best_val_acc) + "%")
+        print("  best validation accuracy rate: " + str(best_val_acc) + "%")
         print("  test loss:                     " + str(test_loss))
-        print("  test error rate:               " + str(test_acc) + "%")
+        print("  test accuracy rate:            " + str(test_acc) + "%")
 
         # decay the LR
         LR *= LR_decay
@@ -238,8 +238,8 @@ def main(train_set_x, train_set_y, valid_set_x, valid_set_y, test_set_x, test_se
 
 
 if __name__ == "__main__":
-    which_data = 'cifar10'
-
+    which_data = 'svhn'
+    nb_classes = 11
 
     # Load the dataset
     print("Loading data...")
@@ -258,9 +258,9 @@ if __name__ == "__main__":
     test_set_y = np.hstack(test_set_y)
 
     # Onehot the targets
-    train_set_y = np.float32(np.eye(10)[train_set_y])
-    valid_set_y = np.float32(np.eye(10)[valid_set_y])
-    test_set_y = np.float32(np.eye(10)[test_set_y])
+    train_set_y = np.float32(np.eye(nb_classes)[train_set_y])
+    valid_set_y = np.float32(np.eye(nb_classes)[valid_set_y])
+    test_set_y = np.float32(np.eye(nb_classes)[test_set_y])
 
     # for hinge loss
     train_set_y = 2 * train_set_y - 1.
@@ -270,16 +270,16 @@ if __name__ == "__main__":
     del datasets
 
     batch_size = 100
-    num_epochs = 500
-    hash_bits = np.array([12, 24, 32, 48])
+    num_epochs = 200
+    hash_bits = np.array([48, 32, 24, 12])
 
     for i in range(len(hash_bits)):
         hash_bit = hash_bits[i]
         #  'You have {} things.'.format(things)  # str.format()
         #  'You have %d things.' % things  # % interpolation
         #  f'You have {things} things.'  # f-string (since Python 3.6)
-        save_model_path = 'bdhn_cifar10_model_' + str(hash_bit) + '.npz'
-        save_hash_path = 'bdhn_cifar10_hash_' + str(hash_bit) + '.npz'
+        save_model_path = 'bdhn_' + which_data + '_cifar10_model_' + str(hash_bit) + '.npz'
+        save_hash_path = 'bdhn_' + which_data + '_hash_' + str(hash_bit) + '.npz'
         network = main(train_set_x, train_set_y, valid_set_x, valid_set_y, test_set_x, test_set_y, which_data,
                        batch_size, num_epochs, hash_bit,
                        save_model_path, save_hash_path)

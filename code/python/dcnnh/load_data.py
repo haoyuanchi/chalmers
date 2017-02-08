@@ -42,18 +42,18 @@ def load_svhn():
     # street view house numbers defaults: 73,257 train / 26,032 test
     (X_train, y_train), (X_test, y_test) = svhn2.load_data()
     # have time to burn? use 'extra' and train on > 600,000 examples!
-    (X_extra, y_extra), = svhn2.load_data(sets=['extra'])
-    X_train = np.concatenate([X_train, X_extra])
-    y_train = np.concatenate([y_train, y_extra])
+    # (X_extra, y_extra), = svhn2.load_data(sets=['extra'])
+    # X_train = np.concatenate([X_train, X_extra])
+    # y_train = np.concatenate([y_train, y_extra])
 
     # Downsample the training dataset if specified
-    train_set_len = len(X_train[1])
+    train_set_len = len(X_train) * 9 / 10
 
     # Extract validation dataset from train dataset
-    valid_set = [x[-(train_set_len//10):] for x in X_train]
-    train_set = [x[:-(train_set_len//10)] for x in X_train]
+    train_set = X_train[0:train_set_len, :, :].reshape(-1, 3, 32, 32), y_train[0:train_set_len, :].flatten()
+    valid_set = X_train[train_set_len:, :, :].reshape(-1, 3, 32, 32), y_train[train_set_len:, :].flatten()
 
-    test_set = X_test[:, :, :].reshape(train_set_len, 3, 32, 32).astype('float32'), y_test
+    test_set = X_test[:, :, :].reshape(-1, 3, 32, 32).astype('float32'), y_test.flatten()
     rval = [train_set, valid_set, test_set]
     return rval
 
