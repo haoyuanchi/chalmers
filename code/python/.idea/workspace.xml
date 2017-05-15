@@ -1,12 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="498eeab2-1fc9-4d5c-a24c-c9c028713a94" name="Default" comment="" />
-    <list id="4a085799-6979-4c61-9cdb-373a9559d4c4" name="New changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/python.iml" afterPath="$PROJECT_DIR$/.idea/python.iml" />
+    <list default="true" id="498eeab2-1fc9-4d5c-a24c-c9c028713a94" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autoencode/AE.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autoencode/CAE_theano.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autoencode/CAE_tool.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autoencode/Conv_AE.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autoencode/DAE.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autoencode/SAE.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autoencode/VAE.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ADNI1_mni/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ADNI1_resample/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hash_autoencode/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/addition_rnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/antirectifier.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/babi_memnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/babi_rnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/cifar10_cnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/conv_filter_visualization.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/conv_lstm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ADNI1_mni/create_fold.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/deep_dream.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autorun/ad_mci_nc_resample/dp.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AD_NC_Colin27/drawSlices.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AD_NC_Colin27/drawSlices_four.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ADNI1_mni/get_data_ad.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ADNI1_resample/get_data_ad.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autorun/ad_mci_nc_resample/get_data_ad.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autorun/multi_class_without_pretrain/get_data_ad.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/image_ocr.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/imdb_bidirectional_lstm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/imdb_cnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/imdb_cnn_lstm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/imdb_fasttext.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/imdb_lstm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autorun/ad_mci_nc_resample/lr.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/lstm_benchmark.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/lstm_text_generation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ADNI1_mni/main_ad.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ADNI1_resample/main_ad.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autorun/ad_mci_nc_resample/main_ad.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ADNI1_mni/main_ad_keras2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/mnist_acgan.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/mnist_cnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/mnist_hierarchical_rnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/mnist_irnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/mnist_mlp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/mnist_net2net.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/mnist_siamese_graph.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/mnist_sklearn_wrapper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/mnist_swwae.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/mnist_transfer_cnn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ADNI1_mni/movefile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/neural_doodle.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/neural_style_transfer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/pretrained_word_embeddings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/reuters_mlp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/stateful_lstm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/variational_autoencoder.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keras_examples/variational_autoencoder_deconv.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nolearn/train_hash.py" afterPath="$PROJECT_DIR$/nolearn/train_hash.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+    <list id="4a085799-6979-4c61-9cdb-373a9559d4c4" name="New changelist" comment="" />
     <ignored path="python.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -19,8 +76,25 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/python$addition_rnn.coverage" NAME="addition_rnn Coverage Results" MODIFIED="1493309997101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras_examples" />
+    <SUITE FILE_PATH="coverage/python$conv_filter_visualization.coverage" NAME="conv_filter_visualization Coverage Results" MODIFIED="1493350637182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras_examples" />
+    <SUITE FILE_PATH="coverage/python$drawSlices_four.coverage" NAME="drawSlices_four Coverage Results" MODIFIED="1492763347722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AD_NC_Colin27" />
+    <SUITE FILE_PATH="coverage/python$conv_lstm.coverage" NAME="conv_lstm Coverage Results" MODIFIED="1493352007923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras_examples" />
+    <SUITE FILE_PATH="coverage/python$test_plot.coverage" NAME="test_plot Coverage Results" MODIFIED="1492673828313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_keras" />
+    <SUITE FILE_PATH="coverage/python$test_3D_keras.coverage" NAME="test_3D_keras Coverage Results" MODIFIED="1494581517273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/python$main_ad.coverage" NAME="main_ad Coverage Results" MODIFIED="1494813714794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ADNI1_resample" />
+    <SUITE FILE_PATH="coverage/python$variational_autoencoder.coverage" NAME="variational_autoencoder Coverage Results" MODIFIED="1493309237133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras_examples" />
+    <SUITE FILE_PATH="coverage/python$movefile.coverage" NAME="movefile Coverage Results" MODIFIED="1494508132097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ADNI1" />
     <SUITE FILE_PATH="coverage/python$train_hash.coverage" NAME="train_hash Coverage Results" MODIFIED="1485281831219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ssdh" />
     <SUITE FILE_PATH="coverage/python$test_nolearn.coverage" NAME="test_nolearn Coverage Results" MODIFIED="1485859265387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nolearn" />
+    <SUITE FILE_PATH="coverage/python$drawSlices.coverage" NAME="drawSlices Coverage Results" MODIFIED="1492763314646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AD_NC_Colin27" />
+    <SUITE FILE_PATH="coverage/python$cifar10_vgg16.coverage" NAME="cifar10_vgg16 Coverage Results" MODIFIED="1493306945485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras_vgg_hash_cifar10" />
+    <SUITE FILE_PATH="coverage/python$train_hash__1_.coverage" NAME="train_hash (1) Coverage Results" MODIFIED="1487840196190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dcnnh" />
+    <SUITE FILE_PATH="coverage/python$variational_autoencoder_deconv.coverage" NAME="variational_autoencoder_deconv Coverage Results" MODIFIED="1493309401124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras_examples" />
+    <SUITE FILE_PATH="coverage/python$create_fold.coverage" NAME="create_fold Coverage Results" MODIFIED="1494813725550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ADNI1_mni" />
+    <SUITE FILE_PATH="coverage/python$main_ad__1_.coverage" NAME="main_ad (1) Coverage Results" MODIFIED="1494580814316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ADNI1" />
+    <SUITE FILE_PATH="coverage/python$antirectifier.coverage" NAME="antirectifier Coverage Results" MODIFIED="1493349790437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras_examples" />
+    <SUITE FILE_PATH="coverage/python$cifar10_cnn.coverage" NAME="cifar10_cnn Coverage Results" MODIFIED="1494581079842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_keras" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -31,21 +105,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="train_hash.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ssdh/train_hash.py">
+      <file leaf-file-name="movefile.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ADNI1_mni/movefile.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="130" column="40" selection-start-line="128" selection-start-column="4" selection-end-line="130" selection-end-column="40" />
-              <folding />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_nolearn.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nolearn/test_nolearn.py">
+      <file leaf-file-name="main_ad.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ADNI1_resample/main_ad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3478261">
-              <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="135" selection-end-column="70" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -53,23 +129,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="load_data_kerosene.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nolearn/load_data_kerosene.py">
+      <file leaf-file-name="main_ad.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/autorun/ad_mci_nc_resample/main_ad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-0.4729951">
+              <caret line="77" column="65" selection-start-line="77" selection-start-column="65" selection-end-line="77" selection-end-column="65" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="load_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ssdh/load_data.py">
+      <file leaf-file-name="create_fold.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ADNI1_mni/create_fold.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="48" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="48" />
+              <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
               <folding>
-                <element signature="e#1#36#0" expanded="true" />
+                <element signature="e#21#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_data_ad.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ADNI1_resample/get_data_ad.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="193" column="39" selection-start-line="193" selection-start-column="39" selection-end-line="193" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,6 +189,38 @@
         <option value="$PROJECT_DIR$/ssdh/train_hash.py" />
         <option value="$PROJECT_DIR$/ssdh/train_hash_caffenet.py" />
         <option value="$PROJECT_DIR$/nolearn/test_nolearn.py" />
+        <option value="$PROJECT_DIR$/dcnnh/load_data.py" />
+        <option value="$PROJECT_DIR$/dcnnh/model.py" />
+        <option value="$PROJECT_DIR$/dcnnh/train_hash.py" />
+        <option value="$PROJECT_DIR$/nolearn/train_hash.py" />
+        <option value="$PROJECT_DIR$/AD_MRI_Colin27_CAE_compare_73/main_ad.py" />
+        <option value="$PROJECT_DIR$/test_keras/test_plot.py" />
+        <option value="$PROJECT_DIR$/AD_MRI_Colin27_CAE/main_ad.py" />
+        <option value="$PROJECT_DIR$/autorun/ad_without_pretrain/get_data_ad.py" />
+        <option value="$PROJECT_DIR$/AD_NC_Colin27/drawSlices_four.py" />
+        <option value="$PROJECT_DIR$/AD_NC_Colin27/drawSlices.py" />
+        <option value="$PROJECT_DIR$/keras_vgg_hash_cifar10/cifar10_vgg16.py" />
+        <option value="$PROJECT_DIR$/keras_vgg_hash_cifar10/model.py" />
+        <option value="$PROJECT_DIR$/hash_autoencode/model.py" />
+        <option value="$PROJECT_DIR$/autoencode/CAE.py" />
+        <option value="$PROJECT_DIR$/autoencode/VAE.py" />
+        <option value="$PROJECT_DIR$/autoencode/CAE_theano.py" />
+        <option value="$PROJECT_DIR$/autoencode/SAE.py" />
+        <option value="$PROJECT_DIR$/autoencode/AE.py" />
+        <option value="$PROJECT_DIR$/autoencode/Conv_AE.py" />
+        <option value="$PROJECT_DIR$/autoencode/DAE.py" />
+        <option value="$PROJECT_DIR$/ADNI1.py" />
+        <option value="$PROJECT_DIR$/autorun/ad_without_pretrain/main_ad.py" />
+        <option value="$PROJECT_DIR$/autorun/multi_class_without_pretrain/main_ad.py" />
+        <option value="$PROJECT_DIR$/AD_NC_Colin27/main_ad.py" />
+        <option value="$PROJECT_DIR$/AD_NC_Colin27/get_data_ad.py" />
+        <option value="$PROJECT_DIR$/ADNI1/movefile.py" />
+        <option value="$PROJECT_DIR$/test/test_3D_keras.py" />
+        <option value="$PROJECT_DIR$/ADNI1/get_data_ad.py" />
+        <option value="$PROJECT_DIR$/ADNI1/main_ad.py" />
+        <option value="$PROJECT_DIR$/ADNI1_mni/create_fold.py" />
+        <option value="$PROJECT_DIR$/ADNI1_resample/main_ad.py" />
+        <option value="$PROJECT_DIR$/autorun/ad_mci_nc_resample/main_ad.py" />
       </list>
     </option>
   </component>
@@ -111,9 +233,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="46" />
-    <option name="y" value="46" />
-    <option name="width" value="1864" />
-    <option name="height" value="1034" />
+    <option name="y" value="-4" />
+    <option name="width" value="1874" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -126,7 +248,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -138,6 +260,112 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="python">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="python">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="python">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="autorun">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="multi_class_without_pretrain">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="python">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="autorun">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="python">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="autorun">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ad_mci_nc_resample">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="python">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ADNI1_resample">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="python">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ADNI1_mni">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -146,115 +374,119 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssdh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/BinaryNet" />
+    <property name="last_opened_file_path" value="$USER_HOME$/workspace/py2/bin/python2.7" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\chiha\chalmers\code\python\nolearn" />
-      <recent name="C:\Users\chiha\chalmers\code\python\ssdh" />
+      <recent name="$PROJECT_DIR$/autorun/ad_mci_nc_resample" />
+      <recent name="$PROJECT_DIR$/ADNI1_mni" />
+      <recent name="$PROJECT_DIR$/ADNI1_resample" />
+      <recent name="$PROJECT_DIR$/ADNI1" />
+      <recent name="$PROJECT_DIR$/autorun/multi_class_without_pretrain" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ADNI1" />
+      <recent name="$PROJECT_DIR$/hash_autoencode" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_nolearn">
-    <configuration default="false" name="train_hash" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.create_fold">
+    <configuration default="false" name="movefile" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ssdh" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ADNI1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ssdh/train_hash.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ADNI1/movefile.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="train_hash_caffenet" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="cifar10_cnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ssdh" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_keras" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ssdh/train_hash_caffenet.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_keras/cifar10_cnn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="test_nolearn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="test_3D_keras" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nolearn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nolearn/test_nolearn.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test_3D_keras.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="create_fold" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ADNI1_mni" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ADNI1_mni/create_fold.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main_ad" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ADNI1_resample" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ADNI1_resample/main_ad.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -329,6 +561,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -441,16 +679,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.train_hash" />
-      <item index="1" class="java.lang.String" itemvalue="Python.train_hash_caffenet" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test_nolearn" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.movefile" />
+      <item index="1" class="java.lang.String" itemvalue="Python.cifar10_cnn" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test_3D_keras" />
+      <item index="3" class="java.lang.String" itemvalue="Python.create_fold" />
+      <item index="4" class="java.lang.String" itemvalue="Python.main_ad" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.test_nolearn" />
-        <item index="1" class="java.lang.String" itemvalue="Python.train_hash_caffenet" />
-        <item index="2" class="java.lang.String" itemvalue="Python.train_hash" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.create_fold" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main_ad" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_3D_keras" />
+        <item index="3" class="java.lang.String" itemvalue="Python.cifar10_cnn" />
+        <item index="4" class="java.lang.String" itemvalue="Python.movefile" />
       </list>
     </recent_temporary>
   </component>
@@ -472,7 +714,13 @@
       <option name="project" value="LOCAL" />
       <updated>1485870898704</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="svhn">
+      <created>1486530648164</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1486530648164</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -485,23 +733,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="46" width="1864" height="1034" extended-state="0" />
+    <frame x="46" y="-4" width="1874" height="1084" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20490928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997763" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997763" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10626398" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24946351" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3490364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35389283" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.656639" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5184729" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -544,7 +792,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="network_struct" />
-    <option name="LAST_COMMIT_MESSAGE" value="network_struct" />
+    <MESSAGE value="svhn" />
+    <option name="LAST_COMMIT_MESSAGE" value="svhn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -569,6 +818,101 @@
           <line>78</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/dcnnh/train_hash.py</url>
+          <line>176</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/dcnnh/train_hash.py</url>
+          <line>203</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/dcnnh/train_hash.py</url>
+          <line>188</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/dcnnh/train_hash.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/dcnnh/load_data.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$USER_HOME$/Desktop/fine-tuning-master/fine-tuning-master/Oxford102/bootstrap.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AD_NC_Colin27/drawSlices.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AD_NC_Colin27/drawSlices.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AD_NC_Colin27/drawSlices_four.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/keras_examples/conv_lstm.py</url>
+          <line>101</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/keras_examples/conv_lstm.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AD_NC_Colin27/main_ad.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AD_NC_Colin27/get_data_ad.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/ADNI1_resample/get_data_ad.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_3D_keras.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_3D_keras.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/ADNI1_resample/main_ad.py</url>
+          <line>213</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/ADNI1_resample/main_ad.py</url>
+          <line>208</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/ADNI1_mni/create_fold.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -577,26 +921,362 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="34" />
+      <option name="time" value="88" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="lasagne.layers.get_output_shape(network['hash'])" language="Python" />
+        <watch expression="K.argmax(y_pred, axis=-1)" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ssdh/train_hash.py">
+    <entry file="file://$PROJECT_DIR$/hash_autoencode/cifar10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45824847">
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autorun/ad_without_pretrain_singal_accuracy/main_ad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.083225">
+          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="163" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autorun/ad_without_pretrain_singal_accuracy/get_data_ad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3537061">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autorun/ad_without_pretrain/get_data_ad.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="40" selection-start-line="128" selection-start-column="4" selection-end-line="130" selection-end-column="40" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autorun/ad_without_pretrain/main_ad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="26.62069">
+          <caret line="258" column="52" selection-start-line="258" selection-start-column="52" selection-end-line="258" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medical_image/helloworld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medical_image/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medical_image/test_video_3d.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medical_image/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medical_image/test_3d.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.45123538">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AD_NC_Colin27/get_data_ad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.689655">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AD_NC_Colin27/main_ad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/sklearn/model_selection/_split.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33281493">
+          <caret line="1571" column="4" selection-start-line="1571" selection-start-column="4" selection-end-line="1571" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ADNI1_resample/movefile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/keras/layers/convolutional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="546" column="8" selection-start-line="546" selection-start-column="8" selection-end-line="546" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nolearn/test_nolearn.py">
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/keras/layers/pooling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="677" column="0" selection-start-line="677" selection-start-column="0" selection-end-line="677" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_keras/cifar10_cnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23126338">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_3D_keras.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="e#22#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/image_ocr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="481" column="24" selection-start-line="481" selection-start-column="24" selection-end-line="481" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="762" column="0" selection-start-line="762" selection-start-column="0" selection-end-line="762" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/variational_autoencoder_deconv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/variational_autoencoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/stateful_lstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/reuters_mlp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/keras/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="797" column="8" selection-start-line="797" selection-start-column="8" selection-end-line="797" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1706" column="8" selection-start-line="1706" selection-start-column="8" selection-end-line="1706" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/neural_style_transfer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/neural_doodle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/mnist_transfer_cnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/mnist_swwae.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/mnist_sklearn_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3061225">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/mnist_siamese_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2745826">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/mnist_net2net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.756957">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/mnist_mlp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.90352505">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/mnist_irnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3710575">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/mnist_hierarchical_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/mnist_acgan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.7439704">
+          <caret line="149" column="43" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/lstm_text_generation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7346939">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/mnist_cnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/keras/layers/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.187384">
+          <caret line="92" column="27" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autorun/multi_class_without_pretrain/main_ad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6757679">
+          <caret line="250" column="48" selection-start-line="250" selection-start-column="34" selection-end-line="250" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ADNI1_resample/main_ad_keras2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.061434">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ADNI1_mni/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030716723">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ADNI1_mni/get_data_ad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1637931">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ADNI1_mni/movefile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ADNI1_mni/create_fold.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+          <folding>
+            <element signature="e#21#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autorun/multi_class_without_pretrain/get_data_ad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6235678">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -604,136 +1284,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nolearn/load_data_kerosene.py">
+    <entry file="file://$PROJECT_DIR$/ADNI1_resample/get_data_ad.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssdh/load_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="48" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="48" />
+          <caret line="193" column="39" selection-start-line="193" selection-start-column="39" selection-end-line="193" selection-end-column="39" />
           <folding>
-            <element signature="e#1#36#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssdh/train_hash.py">
+    <entry file="file://$PROJECT_DIR$/ADNI1_resample/main_ad.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssdh/load_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="135" selection-end-column="70" />
           <folding>
-            <element signature="e#1#36#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssdh/train_hash.py">
+    <entry file="file://$PROJECT_DIR$/autorun/ad_mci_nc_resample/main_ad.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="248" column="54" selection-start-line="248" selection-start-column="54" selection-end-line="248" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssdh/load_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/regularization.py" />
-    <entry file="file://$PROJECT_DIR$/ssdh/train_hash.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/regularization.py" />
-    <entry file="file://$PROJECT_DIR$/ssdh/train_hash.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="71" selection-start-line="77" selection-start-column="71" selection-end-line="77" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/init.py" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/layers/conv.py" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/layers/base.py" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/layers/pool.py" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/layers/__init__.py" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/__init__.py" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/layers/__init__.py" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/__init__.py" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/layers/pool.py" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/init.py" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/layers/conv.py" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/layers/base.py" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/lasagne/regularization.py" />
-    <entry file="file://$PROJECT_DIR$/ssdh/train_hash_caffenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="352" column="34" selection-start-line="352" selection-start-column="34" selection-end-line="352" selection-end-column="34" />
-          <folding>
-            <element signature="e#23#95#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nolearn/load_data_kerosene.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssdh/train_hash.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="40" selection-start-line="128" selection-start-column="4" selection-end-line="130" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssdh/load_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="48" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="48" />
-          <folding>
-            <element signature="e#1#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nolearn/network_struct.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nolearn/test_nolearn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3478261">
-          <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+        <state vertical-scroll-proportion="-0.4729951">
+          <caret line="77" column="65" selection-start-line="77" selection-start-column="65" selection-end-line="77" selection-end-column="65" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>

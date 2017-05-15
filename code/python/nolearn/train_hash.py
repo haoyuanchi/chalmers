@@ -129,7 +129,7 @@ def main(train_set_x, train_set_y, valid_set_x, valid_set_y, test_set_x, test_se
         layers=network,
         max_epochs=200,
 
-        update=adam,
+        update=lasagne.updates.adam,
         update_learning_rate=0.0002,
 
         objective_l2=0.0025,
